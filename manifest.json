@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Page Markup Copy",
+  "version": "1.0.0",
+  "description": "Open a copy of the current page in a new tab and annotate it without touching the original.",
+  "permissions": ["tabs", "scripting", "downloads"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Edit a copy of this page"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
